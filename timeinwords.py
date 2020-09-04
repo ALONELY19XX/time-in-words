@@ -44,14 +44,3 @@ def time_in_words(timestr, use_minutes=False):
       # CASE: non-quarter before full hour
       else:
          return f'{get_minutes(minutes)}{append_minutes(60-minutes, use_minutes)} to {get_hours(hours+1)}'
-   
-
-print(time_in_words('00:00', True))
-print(time_in_words('01:00', True))
-print(time_in_words('12:01', True))
-print(time_in_words('14:15', True))
-print(time_in_words('15:30', True))
-print(time_in_words('15:36', True))
-print(time_in_words('16:45', True))
-print(time_in_words('16:50', True))
-print(time_in_words('16:59', True))
